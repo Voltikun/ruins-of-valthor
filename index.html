@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Ruins of Valthor</title>
-  <link rel="stylesheet" href="style-new.css?v=4">
+  <link rel="stylesheet" href="style-new.css?v=5">
   <style>
     body {
       background: url('ruins-of-valthor-shop.png') no-repeat center center fixed;
@@ -14,7 +14,18 @@
       color: white;
     }
 
-    header, .store {
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header img {
+      width: auto;
+      max-width: 90%;
+      height: auto;
+    }
+
+    .store {
       display: none;
     }
 
@@ -24,12 +35,12 @@
       justify-content: center;
       gap: 20px;
       padding: 40px 20px;
-      margin: 40px auto;
+      margin: 0 auto;
       max-width: 1300px;
     }
 
     .tier {
-      background-color: rgba(20, 20, 20, 0.8);
+      background-color: rgba(20, 20, 20, 0.75);
       border-radius: 10px;
       padding: 20px;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
@@ -68,6 +79,10 @@
   </style>
 </head>
 <body>
+  <header>
+    <img src="ruins-of-valthor-logo.png" alt="Ruins of Valthor">
+  </header>
+
   <section class="donations">
     <div class="tier">
       <h3>Supporter1 ($10)</h3>
