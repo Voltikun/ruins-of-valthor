@@ -24,16 +24,16 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 460px 20px 40px; /* biraz daha aşağı alındı */
+      padding: 500px 20px 40px; /* daha aşağı alındı */
       margin: 0 auto;
       max-width: 1300px;
     }
 
     .tier {
-      background-color: transparent;
+      background-color: rgba(20, 20, 20, 0.75); /* şeffaf kutular geri geldi */
       border-radius: 10px;
       padding: 20px;
-      box-shadow: none;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
       flex: 1 1 260px;
       max-width: 260px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -41,6 +41,7 @@
 
     .tier:hover {
       transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
 
     .tier h3 {
