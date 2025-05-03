@@ -3,27 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <title>Ruins of Valthor</title>
-  <link rel="stylesheet" href="style-new.css?v=3">
+  <link rel="stylesheet" href="style-new.css?v=4">
   <style>
     body {
-background: url('ruins-of-valthor-shop.png') no-repeat center center fixed;
+      background: url('ruins-of-valthor-shop.png') no-repeat center center fixed;
       background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
     }
+
     header, .store {
       display: none;
     }
+
     .donations {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 60px 20px;
-      background-color: rgba(0, 0, 0, 0.75);
-      border-radius: 12px;
-      margin: 40px;
+      padding: 40px 20px;
+      margin: 40px auto;
+      max-width: 1300px;
     }
+
     .tier {
-      flex: 1 1 300px;
+      background-color: rgba(20, 20, 20, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+      flex: 1 1 260px;
+      max-width: 260px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tier:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .tier h3 {
+      color: #f8c146;
+      margin-bottom: 10px;
+    }
+
+    .tier ul {
+      padding-left: 20px;
+      list-style: square;
+      color: #ccc;
+    }
+
+    .tier ul li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
