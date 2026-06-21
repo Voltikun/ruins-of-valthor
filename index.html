@@ -3,84 +3,21 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ruins of Valthor</title>
   <link rel="icon" type="image/x-icon" href="rov.ico">
-  <style>
-    body {
-      background: url('ROV-REALM-MAIN.png') no-repeat center center fixed;
-      background-size: cover;
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Segoe UI', sans-serif;
-      overflow: hidden;
-    }
-
-    .container {
-      display: flex;
-      gap: 50px;
-      margin-top: 200px;
-      /* Push buttons down a bit if title is in image */
-    }
-
-    .choice-btn {
-      position: relative;
-      background: rgba(0, 0, 0, 0.75);
-      backdrop-filter: blur(8px);
-      border: 3px solid #b8860b;
-      color: #ffd700;
-      font-size: 2.5rem;
-      padding: 30px 80px;
-      cursor: pointer;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      transition: all 0.4s ease;
-      text-decoration: none;
-      border-radius: 4px;
-      /* More RPG style */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.8);
-      font-weight: 800;
-      text-shadow: 2px 2px 4px black;
-      min-width: 200px;
-      text-align: center;
-    }
-
-    /* Decoration for buttons */
-    .choice-btn::before {
-      content: '';
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      right: 5px;
-      bottom: 5px;
-      border: 1px solid rgba(255, 215, 0, 0.3);
-      pointer-events: none;
-    }
-
-    .choice-btn:hover {
-      background: rgba(184, 134, 11, 0.3);
-      box-shadow: 0 0 40px rgba(184, 134, 11, 0.6), inset 0 0 20px rgba(184, 134, 11, 0.4);
-      transform: translateY(-5px) scale(1.05);
-      color: #fff;
-      border-color: #ffd700;
-    }
-
-    .choice-btn:active {
-      transform: translateY(2px);
-    }
-  </style>
+  <link rel="stylesheet" href="style-new.css?v=555">
 </head>
 
-<body>
-  <div class="container">
-    <a href="spawner-shop.html" class="choice-btn">Spawner</a>
-    <a href="realm-shop.html" class="choice-btn">Realm</a>
+<body style="background-image: url('ROV-REALM-MAIN.png');">
+  <div class="index-wrapper">
+    <div class="container">
+      <a href="spawner-shop.html" class="choice-btn">Spawner</a>
+      <a href="realm-shop.html" class="choice-btn">Realm</a>
+    </div>
   </div>
 
-  <footer
-    style="position: absolute; bottom: 10px; text-align: center; width: 100%; color: rgba(255,255,255,0.6); font-size: 0.8rem;">
+  <footer style="position: absolute; bottom: 10px; text-align: center; width: 100%; color: rgba(255,255,255,0.6); font-size: 0.8rem; background: transparent; padding: 0;">
     <p>All payments are considered donations to support the server and are strictly non-refundable.</p>
   </footer>
 </body>

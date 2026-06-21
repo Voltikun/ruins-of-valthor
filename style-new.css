@@ -1,67 +1,117 @@
+/* GLOBAL SETTINGS */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: url('ruins-of-valthor-shop.png') no-repeat center center fixed;
-  background-size: cover;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   color: white;
+  /* Specific backgrounds will be applied via inline styles in HTML to keep things separated */
+  background-size: cover !important;
+  background-position: center top !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
 }
 
-/* Başlık */
-.main-title {
-  text-align: center;
-  margin-top: 140px;
+/* INDEX PAGE STYLES */
+.index-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 25vh; /* Responsive push down instead of fixed 200px */
+}
+
+.choice-btn {
+  position: relative;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  border: 3px solid #b8860b;
+  color: #ffd700;
   font-size: 2.5rem;
-  color: #ffd369;
-  text-shadow: 2px 2px 6px #000;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 30px 80px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.8);
+  font-weight: 800;
+  text-shadow: 2px 2px 4px black;
+  min-width: 200px;
+  text-align: center;
 }
 
-/* Donation kartlarının kapsayıcısı */
+.choice-btn::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  pointer-events: none;
+}
+
+.choice-btn:hover {
+  background: rgba(184, 134, 11, 0.3);
+  box-shadow: 0 0 40px rgba(184, 134, 11, 0.6), inset 0 0 20px rgba(184, 134, 11, 0.4);
+  transform: translateY(-5px) scale(1.05);
+  color: #fff;
+  border-color: #ffd700;
+}
+
+.choice-btn:active {
+  transform: translateY(2px);
+}
+
+/* SHOP PAGES STYLES */
 .donations {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 500px 20px 40px;
+  gap: 30px;
+  /* Use vh for responsive padding, so it scales better on mobile */
+  padding: 35vh 20px 40px; 
   max-width: 1300px;
   margin: 0 auto;
 }
 
-/* Her bir supporter kutusu */
 .tier {
-  background-color: rgba(20, 20, 20, 0.75);
-  border-radius: 10px;
-  padding: 20px;
-  flex: 1 1 260px;
-  max-width: 260px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-radius: 12px;
+  padding: 25px;
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(255, 215, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tier.gold-bundle {
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .tier:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  border-color: rgba(255, 215, 0, 1);
 }
 
-/* Kart başlıkları */
-.tier h3 {
-  color: #f8c146;
-  margin-bottom: 10px;
-}
-
-/* Özellik listesi */
-.tier ul {
-  padding-left: 20px;
-  list-style: square;
-  color: #ccc;
-}
-
-.tier ul li {
-  margin-bottom: 6px;
-}
-
-/* Tier icon stili */
 .tier-icon {
   width: 100%;
   height: auto;
@@ -77,18 +127,43 @@ body {
   filter: brightness(1.1);
 }
 
-/* Footer */
-footer {
-  margin-top: 40px;
-  padding: 20px;
+.tier h3 {
+  color: #f8c146;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
   text-align: center;
-  font-size: 0.9rem;
-  color: #aaa;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+}
+
+.tier ul {
+  padding-left: 0;
+  list-style: none;
+  color: #e0e0e0;
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.tier ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.tier ul li:before {
+  content: '✦';
+  color: #ffd700;
+  margin-right: 10px;
+  font-size: 1.2em;
 }
 
 .buy-btn {
-  margin-top: 12px;
-  padding: 10px 24px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 24px;
   background: linear-gradient(135deg, #ffce00, #ff8c00);
   color: #111;
   font-weight: bold;
@@ -122,4 +197,33 @@ footer {
   box-shadow: 0 0 18px rgba(255, 174, 0, 0.9);
   transform: scale(1.05);
   color: black;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #777;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.back-btn:hover {
+  background: white;
+  color: black;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  background: rgba(0, 0, 0, 0.5);
 }
