@@ -61,6 +61,22 @@ body {
   margin-bottom: 6px;
 }
 
+/* Tier icon stili */
+.tier-icon {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.tier:hover .tier-icon {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
 /* Footer */
 footer {
   margin-top: 40px;
