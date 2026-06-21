@@ -128,6 +128,15 @@ body {
   filter: brightness(1.1);
 }
 
+.pet-icon {
+  max-width: 140px; /* Görseli küçültüyoruz */
+  margin: 0 auto 15px auto; /* Ortalamak için */
+  display: block;
+  box-shadow: none; /* Kare şeklinde gölge oluşmasını engeller */
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8)); /* Resmin dış hatlarına gölge verir (PNG için mükemmel) */
+  image-rendering: pixelated; /* Pixel art'ın net görünmesini sağlar */
+}
+
 .tier h3 {
   color: #f8c146;
   margin-top: 0;
