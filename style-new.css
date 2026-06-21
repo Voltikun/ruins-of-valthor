@@ -77,10 +77,12 @@ body {
 
 /* SHOP PAGES STYLES */
 .donations {
-  /* Flexbox yerine sütun (column) yapısı kullanıyoruz, böylece kısa kutuların altındaki boşluklara diğer kutular yerleşir (Masonry görünümü) */
-  column-width: 300px;
-  column-gap: 30px;
-  /* Üst boşluğu biraz daha azalttık */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Kutuların birbirinin boyuna uzamasını engeller */
+  gap: 30px;
+  /* Logo görünümü için üst boşluğu sabitledik */
   padding: 380px 20px 40px; 
   max-width: 1300px;
   margin: 0 auto;
@@ -90,16 +92,14 @@ body {
   background-color: rgba(20, 20, 20, 0.85);
   border-radius: 12px;
   padding: 25px;
-  max-width: 100%;
+  flex: 1 1 300px;
+  max-width: 350px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(255, 215, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   display: flex;
   flex-direction: column;
-  height: auto;
-  /* Kutunun sütunlar arasında ikiye bölünmesini engeller ve aralarına dikey boşluk koyar */
-  break-inside: avoid;
-  margin-bottom: 30px;
+  height: auto; /* İçeriği kadar yer kaplamasını sağlar */
 }
 
 .tier.gold-bundle {
