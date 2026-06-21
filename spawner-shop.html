@@ -6,12 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ruins of Valthor Spawner Shop</title>
   <link rel="icon" type="image/x-icon" href="rov.ico">
-  <link rel="stylesheet" href="style-new.css?v=555">
+  <link rel="stylesheet" href="style-new.css?v=666">
 </head>
 
 <body style="background-image: url('ruins-of-valthor-shop.png');">
   <a href="index.html" class="back-btn">&larr; Back to Main</a>
-  <section class="donations">
+
+  <nav class="shop-nav">
+    <a href="#featured">Featured</a>
+    <a href="#supporters">Supporters</a>
+    <a href="#extras">Extras</a>
+    <a href="#chests">Chests</a>
+  </nav>
+
+  <section class="donations featured-deals" id="featured">
+    <h2 class="section-title" style="margin-top: 0;">🔥 FEATURED DEALS</h2>
+    <div class="tier featured-card">
+      <div class="ribbon">Best Value</div>
+      <img src="sup_7.png" alt="Supporter 7" class="tier-icon">
+      <h3>Supporter7 ($140)</h3>
+      <ul>
+        <li>60% Loot Boost</li>
+        <li>Chat Color</li>
+        <li>Glow</li>
+        <li>10,000 Gold</li>
+        <li>Party Size: 12</li>
+      </ul>
+      <a href="https://buy.stripe.com/00g9Bq0HvcUt8WQ6ov" target="_blank"><button class="buy-btn">BUY</button></a>
+    </div>
+    <div class="tier featured-card">
+      <div class="ribbon">Popular</div>
+      <img src="public_chest3.png" alt="Public Event Chest x100" class="tier-icon pet-icon">
+      <h3>Public Event Chest x100 ($150)</h3>
+      <ul>
+        <li>Receives 100x Public Chests</li>
+        <li>Spawn via /spawnchest &lt;amount&gt;</li>
+        <li>Auto-announces to the server</li>
+        <li>Enjoy amazing exclusive loot!</li>
+        <li style="color: #ff4757; font-weight: bold;">[BONUS] 10x Public Statue</li>
+        <li style="color: #ff4757; font-weight: bold;">[BONUS] 5x Special Statue</li>
+      </ul>
+      <a href="https://buy.stripe.com/3cI00k3Kb5j69FZ5uVbV60s" target="_blank"><button class="buy-btn">BUY</button></a>
+    </div>
+  </section>
+
+  <section class="donations" id="supporters" style="padding-top: 40px;">
+    <h2 class="section-title">💎 SUPPORTER PACKAGES</h2>
     <div class="tier">
       <img src="sup_1.png" alt="Supporter 1" class="tier-icon">
       <h3>Supporter1 ($10)</h3>
@@ -84,18 +124,10 @@
       </ul>
       <a href="https://buy.stripe.com/eVa5lafCp6w5fleeV0" target="_blank"><button class="buy-btn">BUY</button></a>
     </div>
-    <div class="tier">
-      <img src="sup_7.png" alt="Supporter 7" class="tier-icon">
-      <h3>Supporter7 ($140)</h3>
-      <ul>
-        <li>60% Loot Boost</li>
-        <li>Chat Color</li>
-        <li>Glow</li>
-        <li>10,000 Gold</li>
-        <li>Party Size: 12</li>
-      </ul>
-      <a href="https://buy.stripe.com/00g9Bq0HvcUt8WQ6ov" target="_blank"><button class="buy-btn">BUY</button></a>
-    </div>
+  </section>
+
+  <section class="donations" id="extras" style="padding-top: 40px;">
+    <h2 class="section-title">✨ COSMETICS & EXTRAS</h2>
     <div class="tier">
       <h3>Additional Purchases</h3>
       <ul>
@@ -118,11 +150,18 @@
       </ul>
       <a href="https://buy.stripe.com/5kQ7sM1C3bHudWf9LbbV60n" target="_blank"><button class="buy-btn">BUY</button></a>
     </div>
+  </section>
+
+  <section class="donations" id="chests" style="padding-top: 40px;">
+    <h2 class="section-title">📦 EVENT CHESTS</h2>
     <div class="tier">
       <img src="public_chest1.png" alt="Public Event Chest x15" class="tier-icon pet-icon">
       <h3>Public Event Chest x15 ($25)</h3>
       <ul>
-        <li>You can host public chest in nexus</li>
+        <li>Receives 15x Public Chests</li>
+        <li>Spawn via /spawnchest &lt;amount&gt;</li>
+        <li>Auto-announces to the server</li>
+        <li>Enjoy amazing exclusive loot!</li>
       </ul>
       <a href="https://buy.stripe.com/aFa3cwfsT5j68BV7D3bV60r" target="_blank"><button class="buy-btn">BUY</button></a>
     </div>
@@ -130,19 +169,17 @@
       <img src="public_chest2.png" alt="Public Event Chest x50" class="tier-icon pet-icon">
       <h3>Public Event Chest x50 ($80)</h3>
       <ul>
-        <li>You can host public chest in nexus</li>
+        <li>Receives 50x Public Chests</li>
+        <li>Spawn via /spawnchest &lt;amount&gt;</li>
+        <li>Auto-announces to the server</li>
+        <li>Enjoy amazing exclusive loot!</li>
+        <li style="color: #ff4757; font-weight: bold;">[BONUS] 3x Public Statue</li>
+        <li style="color: #ff4757; font-weight: bold;">[BONUS] 1x Special Statue</li>
       </ul>
       <a href="https://buy.stripe.com/bJefZi5Sj5j6dWf9LbbV60t" target="_blank"><button class="buy-btn">BUY</button></a>
     </div>
-    <div class="tier">
-      <img src="public_chest3.png" alt="Public Event Chest x100" class="tier-icon pet-icon">
-      <h3>Public Event Chest x100 ($150)</h3>
-      <ul>
-        <li>You can host public chest in nexus</li>
-      </ul>
-      <a href="https://buy.stripe.com/3cI00k3Kb5j69FZ5uVbV60s" target="_blank"><button class="buy-btn">BUY</button></a>
-    </div>
   </section>
+
   <footer>
     <p>&copy; 2025 Ruins of Valthor. All rights reserved.</p>
     <p style="color: #ff6b6b; font-size: 0.8rem; margin-top: 5px;">All payments are considered donations to support the
