@@ -138,6 +138,15 @@ body {
   image-rendering: pixelated; /* Pixel art'ın net görünmesini sağlar */
 }
 
+.shield-icon {
+  max-width: 200px;
+  margin: 0 auto 15px auto;
+  display: block;
+  box-shadow: none;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
+  image-rendering: pixelated;
+}
+
 .tier h3 {
   color: #f8c146;
   margin-top: 0;
