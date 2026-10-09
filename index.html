@@ -4,25 +4,429 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ruins of Valthor</title>
+  <title>Ruins of Valthor Spawner Shop</title>
+  <meta name="description" content="Official Ruins of Valthor store: supporter ranks, Ironman ranks, event chests, custom pets and more. Instant automated delivery.">
+  <link rel="canonical" href="https://store.rovspawner.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ruins of Valthor">
+  <meta property="og:title" content="Ruins of Valthor Spawner Shop">
+  <meta property="og:description" content="Supporter ranks, Ironman ranks, event chests, custom pets and more. Instant automated delivery.">
+  <meta property="og:url" content="https://store.rovspawner.com/">
+  <meta property="og:image" content="https://store.rovspawner.com/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f8c146">
   <link rel="icon" type="image/x-icon" href="rov.ico">
-  <link rel="stylesheet" href="style-new.css?v=555">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap">
+  <link rel="stylesheet" href="style-new.css?v=777">
 </head>
 
-<body style="background-image: url('ROV-REALM-MAIN.png');">
-  <div class="index-wrapper">
-    <div class="container">
-      <a href="spawner-shop.html" class="choice-btn">Spawner</a>
-      <a href="realm-shop.html" class="choice-btn">Realm</a>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-kicker">Official Spawner Store</p>
+      <p class="hero-sub">Instant automated delivery &middot; Secure checkout via Stripe</p>
+      <div class="hero-actions">
+        <a href="#featured" class="btn btn-primary">Browse the shop</a>
+        <a href="https://discord.gg/rovspawner" target="_blank" rel="noopener" class="btn btn-ghost">Join Discord</a>
+      </div>
     </div>
-  </div>
+  </header>
 
-  <footer style="position: absolute; bottom: 10px; text-align: center; width: 100%; color: rgba(255,255,255,0.6); font-size: 0.8rem; background: transparent; padding: 0;">
-    <p>All payments are considered donations to support the server and are strictly non-refundable.</p>
-    <p style="margin-top: 10px;">
-      <a href="terms.html" style="color: #ffd700; text-decoration: none; margin: 0 10px;">Terms of Service & Refund Policy</a> | 
-      <a href="privacy.html" style="color: #ffd700; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+  <nav class="shop-nav" aria-label="Shop sections">
+    <div class="shop-nav-inner">
+      <a href="#how-to-buy">How to buy</a>
+      <a href="#featured">Featured</a>
+      <a href="#supporters">Supporters</a>
+      <a href="#ironman">Ironman</a>
+      <a href="#extras">Extras</a>
+      <a href="#chests">Chests</a>
+      <a href="https://discord.gg/rovspawner" target="_blank" rel="noopener" class="nav-discord">Discord</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section" id="how-to-buy">
+      <h2 class="section-title">How to Buy</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">1</span>
+          <h3>Pick a package</h3>
+          <p>Click <strong>Buy</strong> on any item below. You'll be taken to a secure Stripe checkout.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">2</span>
+          <h3>Enter your details</h3>
+          <p>Fill in your <strong>Discord ID</strong> and your <strong>in-game name</strong> exactly as they appear. Wrong details can delay delivery.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">3</span>
+          <h3>Get it instantly</h3>
+          <p>Your items are delivered automatically after payment. Didn't receive them? Open a ticket on <a href="https://discord.gg/rovspawner" target="_blank" rel="noopener">our Discord</a>.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section section-featured" id="featured">
+      <h2 class="section-title">🔥 Featured Deals</h2>
+      <div class="grid">
+        <article class="card card-featured">
+          <span class="ribbon ribbon-green">New!</span>
+          <div class="card-media"><img src="verified_merchant_pass.png" alt="Verified Merchant Pass" class="sprite"></div>
+          <h3>Verified Merchant Pass</h3>
+          <p class="price">$15</p>
+          <ul class="perks">
+            <li>Grants official Verified Merchant Status on Discord</li>
+            <li>Unlocks posting permissions in Verified Marketplace channels</li>
+            <li>Access to trusted seller profile &amp; interactive vouch system</li>
+            <li>Automated instant role delivery upon payment</li>
+            <li class="warn">Must accept rules in #vmp-rules to activate</li>
+            <li class="warn">Digital community pass (non-refundable)</li>
+          </ul>
+          <a href="https://buy.stripe.com/5kQ28s0xZ7re7xR2iJbV60G" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card card-featured">
+          <div class="card-media"><img src="groot_pet.png" alt="Custom Order Pet" class="sprite"></div>
+          <h3>Custom Order Pet</h3>
+          <p class="price">$40</p>
+          <ul class="perks">
+            <li>Provide the pet you want via a support ticket</li>
+            <li>The pet is completely exclusive to you</li>
+            <li class="warn">If you lose the pet, the responsibility is yours</li>
+            <li class="warn">Pet size must be 32x32</li>
+          </ul>
+          <a href="https://buy.stripe.com/3cIdRa94v26U3hB6yZbV60z" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card card-featured">
+          <span class="ribbon">Best Value</span>
+          <div class="card-media"><img src="sup_7.png" alt="Supporter 7"></div>
+          <h3>Supporter 7</h3>
+          <p class="price">$140</p>
+          <ul class="perks">
+            <li>60% Loot Boost</li>
+            <li>Chat Color</li>
+            <li>Glow</li>
+            <li>10,000 Gold</li>
+            <li>Party Size: 12</li>
+          </ul>
+          <a href="https://buy.stripe.com/00g9Bq0HvcUt8WQ6ov" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card card-featured">
+          <span class="ribbon">Popular</span>
+          <div class="card-media"><img src="public_chest3.png" alt="Public Event Chest x100" class="sprite"></div>
+          <h3>Public Event Chest x100</h3>
+          <p class="price">$150</p>
+          <ul class="perks">
+            <li>Receives 100x Public Chests</li>
+            <li>Spawn via /spawnchest &lt;amount&gt;</li>
+            <li>Auto-announces to the server</li>
+            <li>Enjoy amazing exclusive loot!</li>
+            <li>Hosters do not need damage threshold for loot</li>
+            <li class="bonus">Bonus: 10x Public Statue</li>
+            <li class="bonus">Bonus: 5x Special Statue</li>
+          </ul>
+          <a href="https://buy.stripe.com/3cI00k3Kb5j69FZ5uVbV60s" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="supporters">
+      <h2 class="section-title">💎 Supporter Packages</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"><img src="sup_1.png" alt="Supporter 1"></div>
+          <h3>Supporter 1</h3>
+          <p class="price">$10</p>
+          <ul class="perks">
+            <li>10% Loot Boost</li>
+            <li>Chat Color</li>
+            <li>Glow</li>
+            <li>1,000 Gold</li>
+            <li>Party Size: 4</li>
+          </ul>
+          <a href="https://buy.stripe.com/4gwdRGgGtbQpa0U3cc" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="sup_2.png" alt="Supporter 2"></div>
+          <h3>Supporter 2</h3>
+          <p class="price">$20</p>
+          <ul class="perks">
+            <li>15% Loot Boost</li>
+            <li>Chat Color</li>
+            <li>Glow</li>
+            <li>2,000 Gold</li>
+            <li>Party Size: 5</li>
+          </ul>
+          <a href="https://buy.stripe.com/5kA3d2cqd8Eddd6fZ0" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="sup_3.png" alt="Supporter 3"></div>
+          <h3>Supporter 3</h3>
+          <p class="price">$30</p>
+          <ul class="perks">
+            <li>20% Loot Boost</li>
+            <li>Chat Color</li>
+            <li>Glow</li>
+            <li>3,000 Gold</li>
+            <li>Party Size: 6</li>
+          </ul>
+          <a href="https://buy.stripe.com/eVafZOeyl07HehaaEH" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="sup_4.png" alt="Supporter 4"></div>
+          <h3>Supporter 4</h3>
+          <p class="price">$40</p>
+          <ul class="perks">
+            <li>25% Loot Boost</li>
+            <li>Chat Color</li>
+            <li>Glow</li>
+            <li>4,000 Gold</li>
+            <li>Party Size: 7</li>
+          </ul>
+          <a href="https://buy.stripe.com/dR6bJy61P3jTc929AE" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="sup_5.png" alt="Supporter 5"></div>
+          <h3>Supporter 5</h3>
+          <p class="price">$70</p>
+          <ul class="perks">
+            <li>30% Loot Boost</li>
+            <li>Chat Color</li>
+            <li>Glow</li>
+            <li>7,000 Gold</li>
+            <li>Party Size: 8</li>
+          </ul>
+          <a href="https://buy.stripe.com/5kA5la89XcUta0U6ot" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="sup_6.png" alt="Supporter 6"></div>
+          <h3>Supporter 6</h3>
+          <p class="price">$100</p>
+          <ul class="perks">
+            <li>40% Loot Boost</li>
+            <li>Chat Color</li>
+            <li>Glow</li>
+            <li>8,000 Gold</li>
+            <li>Party Size: 10</li>
+          </ul>
+          <a href="https://buy.stripe.com/eVa5lafCp6w5fleeV0" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card">
+          <span class="ribbon">Best Value</span>
+          <div class="card-media"><img src="sup_7.png" alt="Supporter 7"></div>
+          <h3>Supporter 7</h3>
+          <p class="price">$140</p>
+          <ul class="perks">
+            <li>60% Loot Boost</li>
+            <li>Chat Color</li>
+            <li>Glow</li>
+            <li>10,000 Gold</li>
+            <li>Party Size: 12</li>
+          </ul>
+          <a href="https://buy.stripe.com/00g9Bq0HvcUt8WQ6ov" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="ironman">
+      <h2 class="section-title">⚙️ Ironman Accounts</h2>
+      <div class="notice">
+        <p><strong>Ironman accounts only.</strong> These items will not be given to other accounts. Open a ticket on Discord for incorrect purchases.</p>
+        <p>Ironman is a sandbox account type and cannot use the trade market in any way.</p>
+      </div>
+      <div class="grid">
+        <article class="card card-ironman">
+          <span class="chip">Ironman only</span>
+          <div class="card-media"><img src="sup_1.png" alt="Rank 1 - Ironman S1"></div>
+          <h3>Rank 1 &middot; Ironman S1</h3>
+          <p class="price">$50</p>
+          <ul class="perks">
+            <li>3,500 Gold</li>
+            <li>+175% Loot Bonus</li>
+            <li>Includes all Donator Perks (Chat Color, Glow, /size, etc.)</li>
+            <li>Chat Tag: [Ironman S1]</li>
+          </ul>
+          <a href="https://buy.stripe.com/8x228s6Wn5j6f0je1rbV60A" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card card-ironman">
+          <span class="chip">Ironman only</span>
+          <div class="card-media"><img src="sup_2.png" alt="Rank 2 - Ironman S2"></div>
+          <h3>Rank 2 &middot; Ironman S2</h3>
+          <p class="price">$125</p>
+          <ul class="perks">
+            <li>6,000 Gold</li>
+            <li>+250% Loot Bonus</li>
+            <li>Includes all Donator Perks (Chat Color, Glow, /size, etc.)</li>
+            <li>Chat Tag: [Ironman S2]</li>
+          </ul>
+          <a href="https://buy.stripe.com/14AdRa0xZaDqg4n6yZbV60B" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card card-ironman">
+          <span class="chip">Ironman only</span>
+          <div class="card-media"><img src="sup_3.png" alt="Rank 3 - Ironman S3"></div>
+          <h3>Rank 3 &middot; Ironman S3</h3>
+          <p class="price">$200</p>
+          <ul class="perks">
+            <li>10,000 Gold</li>
+            <li>+525% Loot Bonus</li>
+            <li>Includes all Donator Perks (Chat Color, Glow, /size, etc.)</li>
+            <li>Chat Tag: [Ironman S3]</li>
+          </ul>
+          <a href="https://buy.stripe.com/7sYcN6fsTcLy8BV5uVbV60C" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card card-ironman">
+          <span class="chip">Ironman only</span>
+          <div class="card-media"><img src="public_chest1.png" alt="Ironman Private Chest x5" class="sprite"></div>
+          <h3>Ironman Private Chest x5</h3>
+          <p class="price">$15</p>
+          <ul class="perks">
+            <li>Receives 5x Private Chests</li>
+            <li class="warn">Can only be opened in the vault</li>
+          </ul>
+          <a href="https://buy.stripe.com/dRmfZi94v12Q8BV0aBbV60D" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card card-ironman">
+          <span class="chip">Ironman only</span>
+          <div class="card-media"><img src="public_chest2.png" alt="Ironman Private Chest x15" class="sprite"></div>
+          <h3>Ironman Private Chest x15</h3>
+          <p class="price">$40</p>
+          <ul class="perks">
+            <li>Receives 15x Private Chests</li>
+            <li class="warn">Can only be opened in the vault</li>
+          </ul>
+          <a href="https://buy.stripe.com/aFacN64Of6na5pJ6yZbV60E" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card card-ironman">
+          <span class="chip">Ironman only</span>
+          <div class="card-media"><img src="public_chest3.png" alt="Ironman Private Chest x30" class="sprite"></div>
+          <h3>Ironman Private Chest x30</h3>
+          <p class="price">$75</p>
+          <ul class="perks">
+            <li>Receives 30x Private Chests</li>
+            <li class="warn">Can only be opened in the vault</li>
+          </ul>
+          <a href="https://buy.stripe.com/6oU5kEeoPeTG2dx9LbbV60F" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="extras">
+      <h2 class="section-title">✨ Cosmetics &amp; Extras</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media card-media-text"><span>💰</span></div>
+          <h3>Skin Bundle</h3>
+          <p class="price">$10</p>
+          <ul class="perks">
+            <li>3,500 Gold (10 Skins)</li>
+            <li>Each skin costs 350 Gold</li>
+          </ul>
+          <a href="https://buy.stripe.com/bIYbJy9e107H0qk4go" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="golden_slime.png" alt="Custom Big Pet" class="sprite"></div>
+          <h3>Custom Big Pets</h3>
+          <p class="price">$15</p>
+          <ul class="perks">
+            <li>Choose from our collection of Big Pets</li>
+            <li class="note">Available to everyone (not exclusive)</li>
+          </ul>
+          <a href="https://buy.stripe.com/5kQ7sM1C3bHudWf9LbbV60n" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card card-info">
+          <div class="card-media card-media-text"><span>🪙</span></div>
+          <h3>Additional Gold</h3>
+          <p class="price">350 Gold = $2</p>
+          <ul class="perks">
+            <li>Skin Cost: 350 Gold</li>
+            <li>Need a custom amount? Open a ticket on Discord.</li>
+          </ul>
+          <a href="https://discord.gg/rovspawner" target="_blank" rel="noopener" class="buy-btn buy-btn-ghost">Open a ticket</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="chests">
+      <h2 class="section-title">📦 Event Chests</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"><img src="public_chest1.png" alt="Public Event Chest x15" class="sprite"></div>
+          <h3>Public Event Chest x15</h3>
+          <p class="price">$25</p>
+          <ul class="perks">
+            <li>Receives 15x Public Chests</li>
+            <li>Spawn via /spawnchest &lt;amount&gt;</li>
+            <li>Auto-announces to the server</li>
+            <li>Enjoy amazing exclusive loot!</li>
+            <li>Hosters do not need damage threshold for loot</li>
+          </ul>
+          <a href="https://buy.stripe.com/aFa3cwfsT5j68BV7D3bV60r" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="public_chest2.png" alt="Public Event Chest x50" class="sprite"></div>
+          <h3>Public Event Chest x50</h3>
+          <p class="price">$80</p>
+          <ul class="perks">
+            <li>Receives 50x Public Chests</li>
+            <li>Spawn via /spawnchest &lt;amount&gt;</li>
+            <li>Auto-announces to the server</li>
+            <li>Enjoy amazing exclusive loot!</li>
+            <li>Hosters do not need damage threshold for loot</li>
+            <li class="bonus">Bonus: 3x Public Statue</li>
+            <li class="bonus">Bonus: 1x Special Statue</li>
+          </ul>
+          <a href="https://buy.stripe.com/bJefZi5Sj5j6dWf9LbbV60t" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+
+        <article class="card">
+          <span class="ribbon">Popular</span>
+          <div class="card-media"><img src="public_chest3.png" alt="Public Event Chest x100" class="sprite"></div>
+          <h3>Public Event Chest x100</h3>
+          <p class="price">$150</p>
+          <ul class="perks">
+            <li>Receives 100x Public Chests</li>
+            <li>Spawn via /spawnchest &lt;amount&gt;</li>
+            <li>Auto-announces to the server</li>
+            <li>Enjoy amazing exclusive loot!</li>
+            <li>Hosters do not need damage threshold for loot</li>
+            <li class="bonus">Bonus: 10x Public Statue</li>
+            <li class="bonus">Bonus: 5x Special Statue</li>
+          </ul>
+          <a href="https://buy.stripe.com/3cI00k3Kb5j69FZ5uVbV60s" target="_blank" rel="noopener" class="buy-btn">Buy now</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-links">
+      <a href="https://discord.gg/rovspawner" target="_blank" rel="noopener">Discord</a>
+      <a href="terms.html">Terms of Service &amp; Refund Policy</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:support@rovspawner.com">support@rovspawner.com</a>
     </p>
+    <p class="footer-legal">All purchases are for digital goods that are delivered automatically and are non-refundable. By clicking 'Buy', you agree to our Terms of Service &amp; Refund Policy.</p>
+    <p class="footer-copy">&copy; 2026 Ruins of Valthor. All rights reserved.</p>
   </footer>
 </body>
 
